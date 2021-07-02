@@ -1,6 +1,6 @@
 import express from 'express'
 
-import { mockUsers } from '../mocks/users'
+import { mockPokemons } from '../mocks/pokemons'
 
 const router = express.Router()
 
@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/users', (req, res) => {
-  res.send(mockUsers)
+  res.send(mockPokemons)
 })
 
 export default router

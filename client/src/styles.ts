@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import logo from './logo.svg'
 
 export const Container = styled.div`
   text-align: center;
@@ -16,6 +15,33 @@ export const Header = styled.header`
   color: white;
 `
 
+export const Modal = styled.div``
+
+export const PokemonName = styled.h2`
+  color: #282c34;
+  font-size: 20px;
+  padding-right: 80px;
+  margin-top: 3px;
+`
+
+export const CloseModalButton = styled.div`
+  font-size: 16px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid #282c34;
+  border-radius: 6px;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
+`
+
 export const Link = styled.a.attrs({
   href: 'https://reactjs.org',
   target: '_blank',
@@ -24,23 +50,13 @@ export const Link = styled.a.attrs({
   color: #61dafb;
 `
 
-export const Logo = styled.img.attrs({
-  src: logo,
-  alt: 'Logo'
-})`
-  height: 40vmin;
+export const PokePicture = styled.img`
   pointer-events: none;
+  max-width: 100%;
+`
 
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    animation: App-logo-spin infinite 20s linear;
-  }
+export const PictureContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
